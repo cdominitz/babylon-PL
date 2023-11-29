@@ -1,13 +1,13 @@
 import { getObjectDict } from './dictionary.js';
 import { getInfoDict } from './infoDict.js';
 
+// put the path and name of room file here
+const path = 'doc/';
+const file = 'another_room.glb';
+
 var canvas = document.getElementById("renderCanvas");
 var engine = new BABYLON.Engine(canvas, true);
 var scene = new BABYLON.Scene(engine);
-
-// put the path and name of room file here
-const path = "doc/";
-const file = "another_room.glb";
 
 // Dictionary to map object names to categories
 var objectCategories = getObjectDict();
