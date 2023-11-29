@@ -1,0 +1,45 @@
+html, body {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+#app {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: 20px;
+}
+
+#sceneContainer {
+    flex: 1;
+    max-width: 70%; /* Set a maximum width for the scene container */
+    overflow: hidden;
+}
+
+#renderCanvas {
+    width: 100%;
+    height: 100%;
+    touch-action: none;
+}
+
+#objectInfo {
+    flex: 1;
+    max-width: 40%;
+    overflow-y: auto; /* Add overflow-y property for vertical scrolling */
+    padding: 20px;
+    font-size: 18px;
+    /* Set a fixed height for scrolling */
+    height: 100vh; /* Adjust the height as needed */
+}
+
+#header {
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+    background-color: #eee;
+}
