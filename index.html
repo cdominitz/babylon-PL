@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PureLiving Room Exploration</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="header">3D Room Exploration</div>
+    
+    <div id="app">
+        <div id="sceneContainer">
+            <canvas id="renderCanvas"></canvas>
+        </div>
+        <div id="objectInfo">
+            <h2 id="objectHeader"><span class="info-label">Object:</span> <span id="obj"></span></h2>
+            <!-- <p><span class="info-label"><b>Sub Categories:</b></span> <span id="subCat"></span></p> -->
+            <p><span class="info-label"><b>Description:</b></span> <span id="desc"></span></p>
+            <p><span class="info-label"><b>Links:</b></span> <span id="links"></span></p>
+        </div>
+    </div>
+
+    <script src="https://cdn.babylonjs.com/babylon.js"></script>
+    <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+    <script src="https://cdn.babylonjs.com/gui/babylon.gui.min.js"></script>
+    <script type="module" src="../src/scripts.js"></script>
+
+</body>
+</html>
+
